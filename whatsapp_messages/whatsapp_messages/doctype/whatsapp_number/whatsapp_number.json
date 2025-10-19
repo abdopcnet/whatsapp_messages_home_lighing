@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:WN-{whatsapp_dep}-{whatsapp_login_number}",
+ "creation": "2025-03-09 01:50:26.654467",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "whatsapp_login",
+  "whatsapp_dep",
+  "whatsapp_login_number",
+  "whatsapp_qrcode",
+  "whatsapp_login_status",
+  "column_break_fhrq",
+  "image_qr",
+  "whatsapp_login_name",
+  "whatsapp_login_date",
+  "section_break_qgnr",
+  "whatsapp_docs"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "whatsapp_login",
+   "fieldtype": "Check",
+   "label": "whatsapp_login"
+  },
+  {
+   "fieldname": "column_break_fhrq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "whatsapp_dep",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "whatsapp_dep",
+   "reqd": 1
+  },
+  {
+   "fieldname": "whatsapp_login_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "whatsapp_login_number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "whatsapp_qrcode",
+   "fieldtype": "Attach Image",
+   "label": "whatsapp_qrcode"
+  },
+  {
+   "fieldname": "whatsapp_login_status",
+   "fieldtype": "Data",
+   "label": "whatsapp_login_status"
+  },
+  {
+   "fieldname": "image_qr",
+   "fieldtype": "Image",
+   "label": "image_qr",
+   "options": "whatsapp_qrcode"
+  },
+  {
+   "fieldname": "whatsapp_login_name",
+   "fieldtype": "Data",
+   "label": "whatsapp_login_name"
+  },
+  {
+   "fieldname": "whatsapp_login_date",
+   "fieldtype": "Data",
+   "label": "whatsapp_login_date"
+  },
+  {
+   "fieldname": "section_break_qgnr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "whatsapp_docs",
+   "fieldtype": "Table",
+   "label": "whatsapp_docs",
+   "options": "whatsapp_docs"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-01 02:53:47.946464",
+ "modified_by": "Administrator",
+ "module": "Whatsapp Messages",
+ "name": "whatsapp_number",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

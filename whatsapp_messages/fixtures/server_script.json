@@ -1,0 +1,21 @@
+[
+ {
+  "allow_guest": 0,
+  "api_method": null,
+  "cron_format": null,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Server Script",
+  "doctype_event": "Before Save (Submitted Document)",
+  "enable_rate_limit": 0,
+  "event_frequency": "All",
+  "modified": "2025-10-19 16:23:30.825033",
+  "module": "Whatsapp Messages",
+  "name": "whatsapp_bulk_validate",
+  "rate_limit_count": 5,
+  "rate_limit_seconds": 86400,
+  "reference_doctype": "bulk_messages",
+  "script": "# احصل على الرقم من الحقل\r\nwhatsapp_number = doc.whatsapp_number or ''\r\n# أزل أي رمز غير رقمي\r\nnumber = ''.join([c for c in whatsapp_number if c.isdigit()])\r\n\r\n# إذا كتب المستخدم 9 أرقام فقط بدون البادئة، أضف البادئة تلقائياً\r\nif len(number) == 9 and not number.startswith('9660'):\r\n    number = '9660' + number\r\n    doc.whatsapp_number = number\r\n\r\n# تحقق من البادئة\r\nif not number.startswith('9660'):\r\n    frappe.throw('رقم الواتساب يجب أن يبدأ بـ 9660.')\r\n\r\ncore_number = number[4:]\r\nif len(core_number) != 9:\r\n    frappe.throw('بعد مفتاح الدولة يجب أن يحتوي الرقم على 9 أرقام فقط.')",
+  "script_type": "DocType Event"
+ }
+]

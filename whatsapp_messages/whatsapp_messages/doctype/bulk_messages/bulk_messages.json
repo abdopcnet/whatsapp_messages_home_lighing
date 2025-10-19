@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:WP-{whatsapp_name}-{whatsapp_number}",
+ "creation": "2025-08-01 01:20:27.584369",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "allow_send",
+  "whatsapp_name",
+  "whatsapp_number",
+  "whatsapp_message",
+  "whatsapp_sender",
+  "whatsapp_status",
+  "whatsapp_image",
+  "whatsapp_image_sended",
+  "whatsapp_attach_video",
+  "whatsapp_video_sended",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "allow_send",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "allow_send",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "whatsapp_number",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "whatsapp_number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "bulk_messages",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "whatsapp_image",
+   "fieldtype": "Attach Image",
+   "label": "whatsapp_image"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "whatsapp_name",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "whatsapp_name",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "whatsapp_status",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "whatsapp_status",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "whatsapp_message",
+   "fieldtype": "Small Text",
+   "label": "whatsapp_message",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "whatsapp_image_sended",
+   "fieldtype": "Small Text",
+   "label": "whatsapp_image_sended",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "whatsapp_attach_video",
+   "fieldtype": "Attach",
+   "label": "whatsapp_attach_video"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "whatsapp_video_sended",
+   "fieldtype": "Small Text",
+   "label": "whatsapp_video_sended",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "whatsapp_sender",
+   "fieldtype": "Small Text",
+   "label": "whatsapp_sender",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-08-01 05:23:44.389634",
+ "modified_by": "Administrator",
+ "module": "Whatsapp Messages",
+ "name": "bulk_messages",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

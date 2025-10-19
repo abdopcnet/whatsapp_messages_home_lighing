@@ -1,0 +1,38 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-09 02:02:29.499892",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "link_doctype",
+  "link_doctype_fields"
+ ],
+ "fields": [
+  {
+   "fieldname": "link_doctype",
+   "fieldtype": "Link",
+   "label": "link_doctype",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "link_doctype_fields",
+   "fieldtype": "Link",
+   "label": "link_doctype_fields",
+   "options": "Custom Field"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-09 02:03:16.478491",
+ "modified_by": "Administrator",
+ "module": "Whatsapp Messages",
+ "name": "whatsapp_docs",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
