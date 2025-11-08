@@ -8,11 +8,12 @@
  "engine": "InnoDB",
  "field_order": [
   "allow_send",
+  "wp_no",
   "whatsapp_name",
   "whatsapp_number",
   "whatsapp_message",
-  "whatsapp_sender",
   "whatsapp_status",
+  "whatsapp_sender",
   "whatsapp_image",
   "whatsapp_image_sended",
   "whatsapp_attach_video",
@@ -57,15 +58,6 @@
   },
   {
    "allow_on_submit": 1,
-   "fieldname": "whatsapp_name",
-   "fieldtype": "Small Text",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "whatsapp_name",
-   "reqd": 1
-  },
-  {
-   "allow_on_submit": 1,
    "fieldname": "whatsapp_status",
    "fieldtype": "Small Text",
    "in_list_view": 1,
@@ -105,13 +97,31 @@
    "fieldtype": "Small Text",
    "label": "whatsapp_sender",
    "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "whatsapp_name",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "whatsapp_name",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "wp_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "wp_no",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "links": [],
- "modified": "2025-08-01 05:23:44.389634",
+ "modified": "2025-11-08 14:44:00.175518",
  "modified_by": "Administrator",
  "module": "Whatsapp Messages",
  "name": "bulk_messages",
@@ -119,8 +129,6 @@
  "owner": "Administrator",
  "permissions": [
   {
-   "amend": 1,
-   "cancel": 1,
    "create": 1,
    "delete": 1,
    "export": 1,
@@ -130,7 +138,6 @@
    "report": 1,
    "role": "System Manager",
    "select": 1,
-   "submit": 1,
    "write": 1
   }
  ],
