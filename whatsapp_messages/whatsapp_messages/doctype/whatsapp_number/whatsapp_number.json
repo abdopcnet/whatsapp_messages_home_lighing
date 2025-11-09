@@ -9,14 +9,15 @@
   "whatsapp_login",
   "whatsapp_dep",
   "whatsapp_login_number",
+  "whatsapp_server",
+  "whatsapp_user",
+  "whatsapp_password",
   "whatsapp_qrcode",
-  "whatsapp_login_status",
   "column_break_fhrq",
+  "whatsapp_login_status",
   "image_qr",
   "whatsapp_login_name",
-  "whatsapp_login_date",
-  "section_break_qgnr",
-  "whatsapp_docs"
+  "whatsapp_login_date"
  ],
  "fields": [
   {
@@ -70,19 +71,24 @@
    "label": "whatsapp_login_date"
   },
   {
-   "fieldname": "section_break_qgnr",
-   "fieldtype": "Section Break"
+   "fieldname": "whatsapp_server",
+   "fieldtype": "Data",
+   "label": "whatsapp_server"
   },
   {
-   "fieldname": "whatsapp_docs",
-   "fieldtype": "Table",
-   "label": "whatsapp_docs",
-   "options": "whatsapp_docs"
+   "fieldname": "whatsapp_user",
+   "fieldtype": "Data",
+   "label": "whatsapp_user"
+  },
+  {
+   "fieldname": "whatsapp_password",
+   "fieldtype": "Data",
+   "label": "whatsapp_password"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-01 02:53:47.946464",
+ "modified": "2025-11-09 00:24:12.342837",
  "modified_by": "Administrator",
  "module": "Whatsapp Messages",
  "name": "whatsapp_number",
