@@ -1,0 +1,151 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "autoincrement",
+ "creation": "2025-11-08 14:57:35.411539",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_1",
+  "column_break_1",
+  "date",
+  "whatsapp_dep",
+  "section_2",
+  "column_break_2",
+  "customer_numbers_table",
+  "section_break_mjja",
+  "whatsapp_message",
+  "whatsapp_image",
+  "whatsapp_attach_video",
+  "section_3",
+  "column_break_4",
+  "total_customers",
+  "total_customers_with_numbers",
+  "correct_numbers",
+  "wrong_numbers",
+  "bulk_messages_created"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "customer_numbers_table",
+   "fieldtype": "Table",
+   "label": "customer_numbers_table",
+   "options": "customer_numbers_table"
+  },
+  {
+   "fieldname": "total_customers",
+   "fieldtype": "Data",
+   "label": "total_customers",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_customers_with_numbers",
+   "fieldtype": "Data",
+   "label": "total_customers_with_numbers",
+   "read_only": 1
+  },
+  {
+   "fieldname": "correct_numbers",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "correct_numbers",
+   "read_only": 1
+  },
+  {
+   "fieldname": "wrong_numbers",
+   "fieldtype": "Data",
+   "label": "wrong_numbers",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bulk_messages_created",
+   "fieldtype": "Data",
+   "label": "bulk_messages_created",
+   "read_only": 1
+  },
+  {
+   "fieldname": "whatsapp_dep",
+   "fieldtype": "Data",
+   "label": "whatsapp_dep"
+  },
+  {
+   "fieldname": "section_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_mjja",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "whatsapp_message",
+   "fieldtype": "Small Text",
+   "label": "whatsapp_message",
+   "reqd": 1
+  },
+  {
+   "fieldname": "whatsapp_image",
+   "fieldtype": "Attach Image",
+   "label": "whatsapp_image"
+  },
+  {
+   "fieldname": "whatsapp_attach_video",
+   "fieldtype": "Attach",
+   "label": "whatsapp_attach_video"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-09 21:02:28.959411",
+ "modified_by": "Administrator",
+ "module": "Whatsapp Messages",
+ "name": "fetch_customer_numbers",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
