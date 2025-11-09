@@ -111,11 +111,13 @@
    "reqd": 1
   },
   {
+   "description": "example1.jpg/jpeg/png",
    "fieldname": "whatsapp_image",
    "fieldtype": "Attach Image",
    "label": "whatsapp_image"
   },
   {
+   "description": "example1.mp4",
    "fieldname": "whatsapp_attach_video",
    "fieldtype": "Attach",
    "label": "whatsapp_attach_video"
@@ -124,7 +126,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-09 21:02:28.959411",
+ "modified": "2025-11-09 21:49:18.087029",
  "modified_by": "Administrator",
  "module": "Whatsapp Messages",
  "name": "fetch_customer_numbers",
