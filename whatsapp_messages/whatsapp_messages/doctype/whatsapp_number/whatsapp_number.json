@@ -1,35 +1,36 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:WN-{whatsapp_dep}-{whatsapp_login_number}",
+ "autoname": "format:{whatsapp_login_number}",
  "creation": "2025-03-09 01:50:26.654467",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "whatsapp_login",
+  "sec1",
+  "col1",
   "whatsapp_dep",
   "whatsapp_login_number",
   "whatsapp_server",
   "whatsapp_user",
   "whatsapp_password",
-  "whatsapp_qrcode",
-  "column_break_fhrq",
-  "whatsapp_login_status",
-  "image_qr",
+  "col2",
   "whatsapp_login_name",
-  "whatsapp_login_date"
+  "whatsapp_login_user",
+  "sec2",
+  "col3",
+  "whatsapp_login_qr",
+  "whatsapp_qrcode",
+  "whatsapp_login_status",
+  "col4",
+  "image_qr",
+  "sec3",
+  "col5",
+  "whatsapp_login_code",
+  "whatsapp_code",
+  "whatsapp_code_status",
+  "col6"
  ],
  "fields": [
-  {
-   "default": "0",
-   "fieldname": "whatsapp_login",
-   "fieldtype": "Check",
-   "label": "whatsapp_login"
-  },
-  {
-   "fieldname": "column_break_fhrq",
-   "fieldtype": "Column Break"
-  },
   {
    "fieldname": "whatsapp_dep",
    "fieldtype": "Data",
@@ -52,7 +53,7 @@
   {
    "fieldname": "whatsapp_login_status",
    "fieldtype": "Data",
-   "label": "whatsapp_login_status"
+   "label": "whatsapp_qr_status"
   },
   {
    "fieldname": "image_qr",
@@ -64,11 +65,6 @@
    "fieldname": "whatsapp_login_name",
    "fieldtype": "Data",
    "label": "whatsapp_login_name"
-  },
-  {
-   "fieldname": "whatsapp_login_date",
-   "fieldtype": "Data",
-   "label": "whatsapp_login_date"
   },
   {
    "fieldname": "whatsapp_server",
@@ -84,11 +80,74 @@
    "fieldname": "whatsapp_password",
    "fieldtype": "Data",
    "label": "whatsapp_password"
+  },
+  {
+   "fieldname": "whatsapp_login_user",
+   "fieldtype": "Data",
+   "label": "whatsapp_login_user"
+  },
+  {
+   "fieldname": "whatsapp_code",
+   "fieldtype": "Data",
+   "label": "whatsapp_code"
+  },
+  {
+   "fieldname": "sec1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "col1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "col2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sec2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "col3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "col4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sec3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "col5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "col6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "whatsapp_login_code",
+   "fieldtype": "Check",
+   "label": "whatsapp_login_code"
+  },
+  {
+   "default": "0",
+   "fieldname": "whatsapp_login_qr",
+   "fieldtype": "Check",
+   "label": "whatsapp_login_qr"
+  },
+  {
+   "fieldname": "whatsapp_code_status",
+   "fieldtype": "Data",
+   "label": "whatsapp_code_status"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-09 00:24:12.342837",
+ "modified": "2025-11-10 04:47:37.617851",
  "modified_by": "Administrator",
  "module": "Whatsapp Messages",
  "name": "whatsapp_number",
