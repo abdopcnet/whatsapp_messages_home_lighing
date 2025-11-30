@@ -1,6 +1,6 @@
 ## Whatsapp Messages
 
-![Version](https://img.shields.io/badge/version-20.11.2025-blue)
+![Version](https://img.shields.io/badge/version-30.11.2025-blue)
 
 
 Whatsapp Messages is a Frappe/ERPNext application that streamlines sending WhatsApp campaigns to your customers. It adds utility DocTypes and client scripts that allow you to collect valid phone numbers from Sales Invoices, prepare message payloads (text, images, videos) and keep your WhatsApp sender accounts tidy.
