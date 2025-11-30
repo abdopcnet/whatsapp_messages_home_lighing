@@ -1,8 +1,5 @@
 // Copyright (c) 2025, abdopcnet@gmail.com and contributors
 // For license information, please see license.txt
 
-// frappe.ui.form.on("bulk_messages", {
-// 	refresh(frm) {
-
-// 	},
-// });
+// Simple validation - no complex logic needed
+// Validation is handled in Python validate() method
